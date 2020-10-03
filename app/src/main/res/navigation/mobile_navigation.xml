@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_now_playing">
+
+    <fragment
+        android:id="@+id/navigation_now_playing"
+        android:name="org.themoviedb.joaomartins.ui.fragments.nowPlaying.NowPlayingFragment"
+        android:label="@string/navigation_home"
+        tools:layout="@layout/fragment_now_playing" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="org.themoviedb.joaomartins.ui.fragments.search.SearchFragment"
+        android:label="@string/navigation_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="org.themoviedb.joaomartins.ui.fragments.favorites.FavoritesFragment"
+        android:label="@string/navigation_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+</navigation>

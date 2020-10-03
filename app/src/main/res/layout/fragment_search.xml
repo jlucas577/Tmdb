@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground">
+
+    <RelativeLayout
+        android:id="@+id/layoutIntro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="center"
+        android:padding="@dimen/size_margin_box">
+
+        <TextView
+            android:id="@+id/search_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/words_search_intro"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_title"
+            android:textStyle="bold" />
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/search_textarea_box"
+            android:layout_below="@+id/search_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_margin_top"
+            app:mtf_labelColor="@color/grey"
+            app:mtf_image="@drawable/ic_search">
+
+            <EditText
+                android:id="@+id/search_textarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/words_search_placeholder"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLines="1" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_below="@+id/search_textarea_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_margin_top"
+            android:background="@drawable/button"
+            android:text="@string/words_search"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutLoader"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/barLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/white" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutSearch"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/size_margin_box">
+
+        <ImageView
+            android:id="@+id/searchImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_error_image"
+            android:src="@drawable/disconnected"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/searchTitle"
+            android:layout_below="@+id/searchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/words_search_title"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/searchSubtitle"
+            android:layout_below="@+id/searchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/words_search_subtitle"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_subtitle" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_below="@+id/searchSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_margin_top"
+            android:background="@drawable/button"
+            android:text="@string/words_back"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

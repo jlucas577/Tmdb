@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Valores padrões -->
+    <string name="app_name">TMDB</string>
+
+    <!-- Valores globais -->
+    <string name="key_tmdb">d894a441bacf1509fd4a16155bc31b97</string>
+
+    <!-- Navegação -->
+    <string name="navigation_home">Em cartaz</string>
+    <string name="navigation_search">Buscar</string>
+    <string name="navigation_favorites">Favoritos</string>
+
+    <!-- Palavras -->
+    <string name="words_error_title">Tivemos um problema!</string>
+    <string name="words_error_subtitle">Por algum motivo, não conseguimos chegar aos \nnossos servidores, tente novamente!</string>
+    <string name="words_empty_title">Sua lista está vazia!</string>
+    <string name="words_empty_subtitle">No momento você não tem filmes na sua \nlista de favoritos!</string>
+    <string name="words_search_intro">O que você pretende \nassistir hoje?</string>
+    <string name="words_search">Pesquisar</string>
+    <string name="words_search_placeholder">Digite o nome de um filme..</string>
+    <string name="words_favorites_add">Adicionar aos favoritos</string>
+    <string name="words_favorites_remove">Remover dos favoritos</string>
+    <string name="words_back">Voltar</string>
+    <string name="words_search_title">Nada encontrado!</string>
+    <string name="words_search_subtitle">Não existe nenhum filme correspondente a \nsua pesquisa em nosso banco de dados!</string>
+
+</resources>
