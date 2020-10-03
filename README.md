@@ -1,6 +1,6 @@
 # The Movie Database API
 
-Desenvolvimento de um simples aplicativo para Android na linguagem Klotin, onde se faz o uso da API do The Movie Database API.
+Desenvolvimento de um simples aplicativo para Android na linguagem Kotlin, onde se faz o uso da API do The Movie Database API.
 
 ![Logo do aplicativo](https://github.com/jlucas577/tmdb/blob/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true)
 
