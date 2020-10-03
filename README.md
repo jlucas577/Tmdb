@@ -6,7 +6,7 @@ Desenvolvimento de um simples aplicativo para Android na linguagem Klotin, onde 
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
-#Prints do aplicativo final
+# Prints do aplicativo final
 
 ![Tela inicial do aplicativo](https://github.com/jlucas577/tmdb/blob/main/example/Screenshot_2020-10-03-17-46-50-229_org.themoviedb.joaomartins.jpg?raw=true)
 
@@ -32,7 +32,7 @@ Desenvolvimento de um simples aplicativo para Android na linguagem Klotin, onde 
 
 > Tela de detalhes de um filme do aplicativo
 
-#Recursos técnicos
+# Recursos técnicos
 
 Uso de algum framework ou biblioteca para organização de arquitetura e/ou redução de código boilerplate:
 
